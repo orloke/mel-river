@@ -7,5 +7,28 @@ html {
   background-color: white;
   overscroll-behavior: none;
   margin: 0;
-  
+}
+
+.container {
+  @apply w-[1560px] min-w-[1560px] mt-0 mx-auto h-full mdDesktop:w-[1280px] mdDesktop:min-w-[1280px] desktop:w-full desktop:min-w-[1080px] mdTablet:w-full mdTablet:min-w-full;
+}
+
+.container .row{
+  @apply flex h-full py-0 px-8 phone:px-4
+}
+
+.container .v-center{
+  @apply items-center
+}
+
+.container .space-between{
+  @apply justify-between
+}
+
+.container-fluid {
+  @apply w-full h-full
+}
+
+.container-fluid .row {
+  @apply flex h-full
 }

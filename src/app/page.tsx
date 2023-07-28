@@ -1,4 +1,7 @@
-
 export default function Home() {
-  return <main>Olá mundo cruel</main>;
+  return (
+    <div>
+
+    </div>
+  );
 }
