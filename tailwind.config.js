@@ -11,6 +11,7 @@ module.exports = {
         phone: { max: "425px" },
         tablet: { max: "768px" },
         mdTablet: { max: "1080px" },
+        betweenTabletAndDesktop: { min: "1080", max: "1366px" },
         desktop: { max: "1366px" },
         mdDesktop: { max: "1560px" },
         lgDesktop: { max: "1920px" },
