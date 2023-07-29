@@ -1,8 +1,9 @@
-interface assetsProps {
-  /* props go here */
+import { twMerge } from 'tailwind-merge'
+interface RightArrowProps {
+  className?: string;
 }
 
-export function RightArrow() {
+export function RightArrow({ className }: RightArrowProps) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -14,7 +15,7 @@ export function RightArrow() {
       stroke-width='2'
       stroke-linecap='round'
       stroke-linejoin='round'
-      className='feather feather-arrow-right'
+      className={twMerge('feather feather-arrow-right', className)}
     >
       <line x1='5' y1='12' x2='19' y2='12'></line>
       <polyline points='12 5 19 12 12 19'></polyline>

@@ -34,22 +34,25 @@ html {
 }
 
 .header {
-  @apply fixed w-full h-32 z-[4] phone:h-24
-}
-
-.header .logo {
-
+  @apply fixed w-full h-32 z-[4] phone:h-24;
 }
 
 .header .logo a {
-  @apply text-[1.2rem] tracking-[0.5rem] text-black font-bold
+  @apply text-[1.2rem] tracking-[0.5rem] text-black font-bold;
 }
 
 .header .nav {
-  @apply w-[25px] phone:w-4
+  @apply w-[25px] phone:w-4;
 }
 
 .header .nav span {
-  @apply mb-[0.3rem] bg-black h-0.5 w-full block
+  @apply mb-[0.3rem] bg-black h-0.5 w-full block;
 }
 
+.line {
+  @apply mb-2 h-14 relative overflow-hidden tablet:h-12 phone:h-8;
+}
+
+.line span {
+  @apply absolute;
+}
