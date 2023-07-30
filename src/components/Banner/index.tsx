@@ -8,7 +8,7 @@ interface BannerProps {
 export function Banner() {
   return (
     <section
-      className='h-[50vh] bg-white '
+      className='main h-[50vh] bg-white '
       style={{
         height: "calc(var(--vh, 1vh)*50)",
       }}

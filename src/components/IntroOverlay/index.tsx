@@ -23,8 +23,8 @@ export function IntroOverlay() {
           }}
         >
           <div className='overlay-bottom'></div>
-          <div className='overlay-bottom !right-1/3 !tablet:w-screen !tablet:top-full !tablet:right-0 '></div>
-          <div className='overlay-bottom !right-0 !tablet:w-screen !tablet:top-[200%]  '></div>
+          <div className='overlay-bottom !right-1/3 !tablet:w-screen tablet:top-full tablet:!right-0 '></div>
+          <div className='overlay-bottom !right-0 !tablet:w-screen tablet:top-[200%]  '></div>
         </div>
       </div>
     </>
