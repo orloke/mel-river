@@ -7,8 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        "light-yellow": "#fff3d8",
+      },
       screens: {
         phone: { max: "425px" },
+        "654px": { max: "654px" },
         tablet: { max: "768px" },
         mdTablet: { max: "1080px" },
         betweenTabletAndDesktop: { min: "1080", max: "1366px" },
