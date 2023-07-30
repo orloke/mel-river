@@ -64,3 +64,24 @@ html {
 .cases-arrow svg {
   @apply text-white h-7 w-7;
 }
+
+/* intro overlay */
+
+.intro-overlay {
+}
+
+.intro-overlay .top {
+  @apply h-[50vh] absolute w-full z-[8];
+}
+
+.intro-overlay .top .overlay-top {
+  @apply absolute h-full w-1/3 bg-black inset-0 tablet:w-screen;
+}
+
+.intro-overlay .bottom {
+  @apply h-[50vh] absolute w-full z-[8] bottom-0;
+}
+
+.intro-overlay .bottom .overlay-bottom {
+  @apply absolute h-full w-1/3 bg-black bottom-0 right-2/3 tablet:w-screen tablet:right-0;
+}

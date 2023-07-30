@@ -1,8 +1,9 @@
-'use client'
+"use client";
 
 import { Banner } from "@/components/Banner";
 import { Cases } from "@/components/Cases";
 import { Header } from "@/components/Header";
+import { IntroOverlay } from "@/components/IntroOverlay";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
   }, []);
   return (
     <>
+      <IntroOverlay />
       <Header />
       <Banner />
       <Cases />
