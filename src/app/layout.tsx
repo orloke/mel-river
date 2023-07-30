@@ -10,7 +10,7 @@ const JosefinSans = Josefin_Sans({
 export const metadata: Metadata = {
   title: "Mel River",
   description: "Built by Júnior Dering",
-  icons: [{ rel: "icon ", url: "/favicon.ico" }],
+  icons: [{ rel: "icon ", url: "/src/app/favicon.ico" }],
 };
 
 export default function RootLayout({
