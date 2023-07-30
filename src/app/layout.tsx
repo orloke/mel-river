@@ -1,6 +1,6 @@
-import "./globals.css";
 import type { Metadata } from "next";
 import { Josefin_Sans } from "next/font/google";
+import "./globals.css";
 
 const JosefinSans = Josefin_Sans({
   subsets: ["latin"],
@@ -10,6 +10,7 @@ const JosefinSans = Josefin_Sans({
 export const metadata: Metadata = {
   title: "Mel River",
   description: "Built by Júnior Dering",
+  icons: [{ rel: "icon ", url: "/favicon.ico" }],
 };
 
 export default function RootLayout({

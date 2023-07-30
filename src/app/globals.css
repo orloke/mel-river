@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  visibility: hidden;
-}
-
 html {
   user-select: none;
   background-color: white;

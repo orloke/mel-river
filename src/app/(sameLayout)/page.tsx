@@ -2,22 +2,12 @@
 
 import { Banner } from "@/components/Banner";
 import { Cases } from "@/components/Cases";
-import { Header } from "@/components/Header";
 import { IntroOverlay } from "@/components/IntroOverlay";
 import { gsap } from "gsap";
 import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-
-    gsap.to("body", {
-      duration: 0,
-      css: {
-        visibility: "visible",
-      },
-    });
 
     const tl = gsap.timeline();
 
@@ -59,7 +49,6 @@ export default function Home() {
   return (
     <>
       <IntroOverlay />
-      <Header />
       <Banner />
       <Cases />
     </>
