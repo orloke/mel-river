@@ -6,7 +6,7 @@ interface NavigationProps {
 
 export function Navigation() {
   return (
-    <nav>
+    <nav className="hidden left-0 top-[-1px] w-full h-full z-[1] fixed bg-light-yellow">
       <div className='container'>
         <div className='nav-columns'>
           <div className='nav-column'>
@@ -63,7 +63,7 @@ export function Navigation() {
                 <li>Switzerland</li>
               </ul>
               <ul className='nav-info'>
-                <li className='nav-info-label'>Phone</li>
+                <li className='nav-info-label 654px:hidden'>Phone</li>
                 <li className='654px:hidden'>+41 (0) 75 510 28 70</li>
               </ul>
               <ul className='nav-info'>

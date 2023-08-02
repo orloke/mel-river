@@ -11,8 +11,8 @@ export default function SameLayout({
   children: React.ReactNode;
 }) {
   const [dimensions, setDimensions] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
+    width: 0,
+    height: 0,
   });
 
   useEffect(() => {
@@ -26,23 +26,27 @@ export default function SameLayout({
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
 
-    // const handleResize = () => {
-    //   setDimensions({
-    //     width: window.innerWidth,
-    //     height: window.innerHeight,
-    //   });
-    // };
+    if (window != undefined) {
+      setDimensions({ width: window.innerWidth, height: window.innerHeight });
+    }
 
-    // window.addEventListener("resize", handleResize);
+    const handleResize = () => {
+      setDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
 
-    // return () => {
-    //   window.removeEventListener("resize", handleResize);
-    // };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
     <>
-      <Header />
+      <Header dimensions={dimensions} />
       <div className='App'>{children}</div>
       <Navigation />
     </>
